@@ -1,9 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body-general{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
 .titulo-principal{
     align-items: center;
 }
 
 .h1{
     text-align: center;
+}
+
+.alentar{
+    margin-top: 30px;
+}
+
+.h2{
+    text-align: center;
+}
+
+.arg-fra{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
 .paquetes{
