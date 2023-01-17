@@ -6,6 +6,8 @@
 .body-general{
     font-family: 'DM Sans', sans-serif;
     font-family: 'Sofia Sans', sans-serif;
+    color: #8d1c3d;
+    background-color: #e1c396;
 }
 
 .titulo-principal{
@@ -36,6 +38,10 @@
     justify-items: center;
     text-align: center;
     margin-top: 25px;
+}
+
+.formulario{
+    text-align: center;
 }
 
 #login-incorrect{
