@@ -62,3 +62,13 @@
 #logout{
     display: none;
 }
+
+.arg{
+    padding: 3px;
+    background-image: linear-gradient(to right top, #FFFFFF, #75AADB);
+}
+
+.fra{
+    padding: 3px;
+    background-image: linear-gradient(to right top, #0055A4, #FFFFFF, #EF4135);
+}

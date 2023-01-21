@@ -43,9 +43,55 @@ function paquetesAHtml (paquetes){
             <div>
                 <h2>${paquetes[i].nombreDelPaquete}</h2>
                 <p>${paquetes[i].precioDelPaquete}</p>
+                <button id="boton">Ver más</button>
             </div>
         `
         contenedor.appendChild(productos)
     }
 }
 paquetesAHtml(paquetes)
+
+// const boton = document.querySelector("#boton")
+
+// boton.onClick = (paquetes) => {
+//     for (let i = 0; i < paquetes.length; i++){
+//     swal({
+//         title: `${paquetes[i].nombreDelPaquete}`,
+//         text: "You clicked the button!",
+//         icon: "success",
+//       });
+//     }
+// }
+
+const argentina = document.querySelector(".arg")
+const francia = document.querySelector(".fra")
+
+argentina.onclick = () => {
+Toastify({
+    text: "VAMOS ARGENTINA!",
+    duration: 500,
+    close: true,
+    gravity: "bottom",
+    position: "left",
+    stopOnFocus: true,
+    style: {
+      background: "linear-gradient(to right, #ffffff, #75AADB)",
+        }
+    }
+).showToast()
+}
+
+francia.onclick = () => {
+    Toastify({
+        text: "ALEZ FRANCIA!",
+        duration: 500,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "linear-gradient(to right, #0055A4, #FFFFFF, #EF4135)",
+            }
+        }
+    ).showToast()
+}

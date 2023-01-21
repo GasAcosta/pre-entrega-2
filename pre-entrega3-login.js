@@ -26,10 +26,12 @@ formLogin.onsubmit = (event) => {
     if (inputUser.value === clientes.nombreDeUsuario && inputPass.value === clientes.contraseniaDeUsuario){
     subidaLocalStorage("login", true)
     formLogin.style.display = "none" 
+    swal("Bienvenida/o", "Cada vez falta menos para la final del mundial!", "success");
     } else {
     logint.style.display = "block"
     inputUser.style.border = "1px solid red"
     inputPass.style.border = "1px solid red"
+    swal ( "¡ERROR!" ,  "Usuario y/o contraseña inválido" ,  "error" )
     }
 }
 
