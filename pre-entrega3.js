@@ -42,26 +42,16 @@ function paquetesAHtml (paquetes){
         productos.innerHTML = `
             <div>
                 <h2>${paquetes[i].nombreDelPaquete}</h2>
-                <p>${paquetes[i].precioDelPaquete}</p>
-                <button id="boton">Ver más</button>
+                <p>Precio: ${paquetes[i].precioDelPaquete}</p>
+                <p>Tipo de Acceso: ${paquetes[i].accesoContenido}</p>
+                <p>Dispositivos online en simultáneo: ${paquetes[i].cantidadDeDispositivos}</p>
+                <p>Calidad de imagen: ${paquetes[i].calidadDeImagen}</p>
             </div>
         `
         contenedor.appendChild(productos)
     }
 }
 paquetesAHtml(paquetes)
-
-// const boton = document.querySelector("#boton")
-
-// boton.onClick = (paquetes) => {
-//     for (let i = 0; i < paquetes.length; i++){
-//     swal({
-//         title: `${paquetes[i].nombreDelPaquete}`,
-//         text: "You clicked the button!",
-//         icon: "success",
-//       });
-//     }
-// }
 
 const argentina = document.querySelector(".arg")
 const francia = document.querySelector(".fra")

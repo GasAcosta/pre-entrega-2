@@ -16,6 +16,7 @@
 
 .h1{
     text-align: center;
+    padding-top: 50px;
 }
 
 .alentar{
@@ -24,6 +25,12 @@
 
 .h2{
     text-align: center;
+}
+
+.foto-mundial{
+    text-align: center;
+    padding: 10px;
+    display: none;
 }
 
 .arg-fra{
@@ -71,4 +78,8 @@
 .fra{
     padding: 3px;
     background-image: linear-gradient(to right top, #0055A4, #FFFFFF, #EF4135);
+}
+
+.footer{
+    margin-top: 50px;
 }

@@ -12,6 +12,7 @@ const inputUser = document.querySelector("#input-user")
 const inputPass = document.querySelector("#input-pass")
 const logint = document.querySelector("#login-incorrect")
 const logout = document.querySelector("#logout")
+const fotoMundial = document.querySelector(".foto-mundial")
 
 const subidaLocalStorage = (clave, valor) => {
     localStorage.setItem(clave, JSON.stringify(valor))
@@ -27,6 +28,7 @@ formLogin.onsubmit = (event) => {
     subidaLocalStorage("login", true)
     formLogin.style.display = "none" 
     swal("Bienvenida/o", "Cada vez falta menos para la final del mundial!", "success");
+    fotoMundial.style.display = "block"
     } else {
     logint.style.display = "block"
     inputUser.style.border = "1px solid red"
