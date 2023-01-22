@@ -10,6 +10,13 @@
     background-color: #e1c396;
 }
 
+.body-oscuro{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #e1c396;
+    background-color: #8d1c3d;
+}
+
 .titulo-principal{
     align-items: center;
 }
@@ -75,6 +82,14 @@
     background-image: linear-gradient(to right top, #FFFFFF, #75AADB);
 }
 
+.arg-aguante{
+    text-align: center;
+}
+
+.fra-aguante{
+    text-align: center;
+}
+
 .fra{
     padding: 3px;
     background-image: linear-gradient(to right top, #0055A4, #FFFFFF, #EF4135);
@@ -82,4 +97,10 @@
 
 .footer{
     margin-top: 50px;
+}
+
+.boton-modo-oscuro{
+    margin: 10px;
+    text-align: end;
+    font-size: 20px;
 }

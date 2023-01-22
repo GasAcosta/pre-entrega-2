@@ -60,10 +60,9 @@ argentina.onclick = () => {
 Toastify({
     text: "VAMOS ARGENTINA!",
     duration: 500,
-    close: true,
-    gravity: "bottom",
-    position: "left",
+    close: false,
     stopOnFocus: true,
+    className: "arg-aguante",
     style: {
       background: "linear-gradient(to right, #ffffff, #75AADB)",
         }
@@ -73,15 +72,21 @@ Toastify({
 
 francia.onclick = () => {
     Toastify({
-        text: "ALEZ FRANCIA!",
+        text: "ALEZ LA FRANCE!",
         duration: 500,
-        close: true,
-        gravity: "top",
-        position: "right",
+        close: false,
         stopOnFocus: true,
+        className: "fra-aguante",
         style: {
           background: "linear-gradient(to right, #0055A4, #FFFFFF, #EF4135)",
             }
         }
     ).showToast()
 }
+
+const modoOscuro = document.querySelector(".boton-modo-oscuro")
+const bodyOscuro = document.body
+
+modoOscuro.addEventListener("click", function(){
+    bodyOscuro.classList.toggle("body-oscuro")
+})

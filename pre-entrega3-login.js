@@ -53,3 +53,10 @@ logout.onclick = () => {
     localStorage.removeItem("login")
     checkLogin(bajadaLocalStorage("login"))
 }
+
+const modoOscuro = document.querySelector(".boton-modo-oscuro")
+const bodyOscuro = document.body
+
+modoOscuro.addEventListener("click", function(){
+    bodyOscuro.classList.toggle("body-oscuro")
+})
